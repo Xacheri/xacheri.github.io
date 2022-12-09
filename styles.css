@@ -1,0 +1,322 @@
+/* font-face at top */
+
+@font-face {
+    font-family: 'lucida_handwritingitalic';
+    src: url('webfontkit/lucida_handwriting_italic-webfont.woff2') format('woff2'),
+         url('webfontkit/lucida_handwriting_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+    font-size: 1.2rem;
+    text-indent: 32px;
+    font-family: sans-serif;
+    color: white;
+}
+
+pre {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: white;
+}
+body {
+    max-width: 100vw;
+
+    background-color: #191880;
+}
+
+h2 {
+    max-width: 100vw;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+h3 {
+    font-size: 2rem;
+    max-width: 100vw;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+#cirheader {
+    max-width: 100vw;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    overflow: visible;
+}
+/* These are for the navigation */
+
+    .z-index-top {
+        z-index: 100;
+    }
+    .navbar {
+        position: relative;
+        z-index: 100;  
+        background-color: #84A2BE;
+        padding-right: 1rem;
+        padding-left: 0.5rem;
+    }
+
+
+    .logo {
+        /* Here we will build the logo container */
+        display: flex;
+        flex-basis: 0;
+        min-height: 100px;
+        min-width: 180px;
+        justify-content: right;
+        background-image: url("logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    .logoName {
+        /* This is the logo text */
+        font-family: 'lucida_handwritingitalic';
+        font-size: 16px;
+        white-space: nowrap; /* Keeps everything in one line */
+        color: #191880;
+
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        padding: 8px;
+
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 28px;
+        color: white;
+    }
+
+    .callnow {
+        white-space: nowrap;
+
+        font-family: sans-serif;
+        font-size: 20px;
+        background-color: red;
+        border-radius: 50px;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        padding-top: 1rem;
+
+        border: none;
+    }
+
+    .btn:hover {
+        background-color: rgb(184, 0, 0);
+    }
+    .nav-item:hover {
+        background-color: #94B1CC;
+    }
+
+    /* These 'a' related statements mostly remove the gross default link formatting */
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        color: inherit;
+    }
+
+    .navbar-toggler {
+        color: #191880;
+    }
+
+
+/* These are for the carousel */
+
+    /* The next two change the color of the next/prev icons. the fill='%23{}' just takes a hex value for the color. */
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+        
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25%;
+        max-width: 50%;
+    }
+
+    blockquote > p {
+        margin-top: 0.5rem;
+        color: black;
+        font-family: 'Noto Sans', sans-serif;
+
+        font-size: 1.5rem;
+    }
+
+    figcaption {
+        font-family: 'Noto Sans', sans-serif;
+        text-align: center;
+        color: black;
+    }
+
+    .carousel-inner {
+        min-height: 40vh;
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+/* Services Grid */
+
+
+    .linewrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .vertline {
+        position: absolute;
+        left: 50%;
+        height: 300%; /* 300% so it goes through all 3 rows */
+        border: 6px solid black;
+    }
+
+    .hlineleft {
+        position: absolute;
+        width: 60%;
+        right: 50%;
+        top: 50%;
+        border: 3px solid black;
+    }
+
+    .hlineright {
+        position: absolute;
+        width: 60%;
+        left: 50%;
+        top: 50%;
+        border: 3px solid black;
+    }
+
+    .treeimageWrapper {
+        z-index: 4;
+    }
+
+    .treeimage {
+        border: black solid 3px;
+    }
+
+
+/* Current Project Cards */
+
+
+    .card-text {
+        color: black;
+    }
+
+    .card-title {
+        font-family: 'Noto Sans', sans-serif;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .max-width-projCards {
+        width: 500px;
+        max-width: 100vw;
+    }
+    
+    .projRow {
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+/* About Us */
+
+    .aboutBar {
+        border: 1px solid white;
+        opacity: 100%;
+    }
+
+    .center75 {
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+
+    .pastProjHeading{
+        font-size: 1.4rem;
+        font-family: sans-serif;
+        color: black;
+        align-self: center;
+    }
+
+    strong {
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .pastProjText{
+        color: black;
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+
+        margin: 0px;
+        text-align: right;
+    }
+
+    .pastCollapse:last-of-type > .accordion-body {
+        border: none;
+    }
+
+    .accordion-body {
+        border-bottom: 1px solid black;
+    }
+    
+    .accordion-item {
+        border: none;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: initial;
+    }
+
+/* Media Queries */
+
+@media screen and (min-width: 996px) {
+
+    #cirheader {
+        font-size: 2rem;
+    }
+
+    blockquote > p {
+        font-size: 2rem;
+    }
+
+    figcaption {
+        font-size: 1.25rem;
+    }
+
+    .treeimage {
+        min-width: 30vw;
+    }
+
+}
